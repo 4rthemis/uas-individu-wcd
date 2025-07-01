@@ -6,6 +6,8 @@ import { Icon } from "../../atoms/Icon/Icon";
 import { Navigation } from "../../molecules/Navigation/Navigation";
 
 export const HeroSection = ({ personalInfo, navigationItems }) => {
+
+
   return (
     <section
       id="home"
@@ -20,7 +22,11 @@ export const HeroSection = ({ personalInfo, navigationItems }) => {
             </div>
 
             {/* Greeting Section */}
-            <div className="flex flex-col sm:flex-row w-full max-w-[782px] items-center justify-between gap-4 sm:gap-8 relative flex-[0_0_auto]">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              className="flex flex-col sm:flex-row w-full max-w-[782px] items-center justify-between gap-4 sm:gap-8 relative flex-[0_0_auto]"
+            >
               {/* Left Ornaments */}
               <div className="hidden sm:block relative w-[115px] h-[115px] rotate-180">
                 <Icon
@@ -52,18 +58,16 @@ export const HeroSection = ({ personalInfo, navigationItems }) => {
 
                 <div>
                   <Card className="bg-[#eff0ff] rounded-[0px_12px_12px_12px] border-none">
-  <CardContent className="px-4 sm:px-5 py-3 sm:py-4">
-    <Text
-  variant="body"
-  color="primary"
-  className="text-lg sm:text-2xl"
->
-  Hi! 👋 I'm {personalInfo.name}
-</Text>
-
-  </CardContent>
-</Card>
-
+                    <CardContent className="px-4 sm:px-5 py-3 sm:py-4">
+                      <Text
+                        variant="body"
+                        color="primary"
+                        className="text-lg sm:text-2xl"
+                      >
+                        Hi! 👋 I'm {personalInfo.name}
+                      </Text>
+                    </CardContent>
+                  </Card>
                 </div>
               </div>
 
@@ -80,8 +84,15 @@ export const HeroSection = ({ personalInfo, navigationItems }) => {
             {/* Main Content */}
             <div className="flex flex-col items-center gap-8 sm:gap-12 relative self-stretch w-full flex-[0_0_auto]">
               {/* Main Title */}
-              <div>
-                <Text variant="h1" color="primary" align="center" className="w-full">
+              <div data-aos="fade-up" data-aos-duration="1000">
+                <Text
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  variant="h1"
+                  color="primary"
+                  align="center"
+                  className="w-full"
+                >
                   <span className="font-semibold">
                     {personalInfo.title}
                     <br />
@@ -92,7 +103,7 @@ export const HeroSection = ({ personalInfo, navigationItems }) => {
               </div>
 
               {/* Description */}
-              <div>
+              <div data-aos="fade-up" data-aos-duration="1000">
                 <Text
                   variant="body"
                   color="secondary"
@@ -106,6 +117,8 @@ export const HeroSection = ({ personalInfo, navigationItems }) => {
               {/* CTA Button */}
               <div>
                 <Button
+                  data-aos="zoom-in-up"
+                  data-aos-duration="1000"
                   asChild
                   className="w-32 sm:w-40 h-10 sm:h-12 bg-[#3d46c9] rounded-[999px] text-sm sm:text-base [font-family:'Plus_Jakarta_Sans',Helvetica] font-normal text-white hover:bg-[#3d46c9]/90 transition-all duration-300 hover:scale-105 hover:shadow-lg"
                 >

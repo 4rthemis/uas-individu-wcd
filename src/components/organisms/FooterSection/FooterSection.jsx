@@ -9,20 +9,17 @@ export const FooterSection = ({ socialLinks }) => {
   };
 
   return (
-    <section
-      id="footer"
-      className="w-full bg-white py-8 sm:py-12 md:py-16"
-    >
+    <section id="footer" className="w-full bg-white py-8 sm:py-12 md:py-16">
       <div className="max-w-screen-xl mx-auto px-4 sm:px-8 md:px-16 lg:px-[120px]">
         <div className="flex flex-col items-center gap-6 sm:gap-8">
           {/* Header Section */}
           <div className="flex flex-col items-center gap-8 sm:gap-12">
-            <div className="flex flex-col items-center gap-4 sm:gap-6">
-              <Text
-                variant="h2"
-                color="primary"
-                align="center"
-              >
+            <div
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              className="flex flex-col items-center gap-4 sm:gap-6"
+            >
+              <Text variant="h2" color="primary" align="center">
                 Ready to Craft your Big Ideas?
               </Text>
 
@@ -37,6 +34,8 @@ export const FooterSection = ({ socialLinks }) => {
             </div>
 
             <Button
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
               onClick={handleGetInTouch}
               data-testid="get-in-touch-button"
               className="flex w-full max-w-[200px] h-12 sm:h-14 items-center justify-center gap-2 px-3 py-2 bg-[#3d46c9] rounded-[999px] text-white hover:bg-[#3d46c9]/90 transition-colors"
@@ -54,7 +53,11 @@ export const FooterSection = ({ socialLinks }) => {
           </div>
 
           {/* Social Links */}
-          <div className="flex items-center justify-center gap-4 w-full max-w-[216px]">
+          <div
+            data-aos="zoom-in-up"
+            data-aos-duration="1000"
+            className="flex items-center justify-center gap-4 w-full max-w-[216px]"
+          >
             {socialLinks.map((link, index) => (
               <a
                 key={link.id}

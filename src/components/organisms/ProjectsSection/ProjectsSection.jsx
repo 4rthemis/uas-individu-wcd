@@ -5,12 +5,13 @@ import { ProjectCard } from "../../molecules/ProjectCard/ProjectCard";
 
 export const ProjectsSection = ({ projects }) => {
   return (
-    <section
-      id="projects"
-      className="w-full"
-    >
+    <section id="projects" className="w-full">
       <div className="flex flex-col items-center gap-8 sm:gap-12 md:gap-16">
-        <div className="flex flex-col items-center gap-6 sm:gap-8 relative self-stretch w-full">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="flex flex-col items-center gap-6 sm:gap-8 relative self-stretch w-full"
+        >
           <Text
             variant="h2"
             color="primary"
@@ -31,7 +32,11 @@ export const ProjectsSection = ({ projects }) => {
           </Text>
         </div>
 
-        <div className="flex flex-col items-center gap-8 relative self-stretch w-full">
+        <div
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
+          className="flex flex-col items-center gap-8 relative self-stretch w-full"
+        >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-10 lg:gap-14 w-full max-w-[1200px]">
             {projects.map((project) => (
               <ProjectCard key={project.id} project={project} />
@@ -40,8 +45,19 @@ export const ProjectsSection = ({ projects }) => {
         </div>
 
         <Button
+          data-aos="zoom-in-up"
+          data-aos-duration="1000"
           asChild
-          className="w-full max-w-[400px] h-12 sm:h-14 md:h-16 bg-[#3d46c9] rounded-[999px] hover:bg-[#3d46c9]/90 transition-colors"
+          className="
+    w-full 
+    max-w-[400px] 
+    h-14 sm:h-15 md:h-16 
+    bg-[#3d46c9] 
+    rounded-full 
+    hover:bg-[#3d46c9]/90 
+    transition-colors
+    px-4
+  "
         >
           <a
             href="https://dribbble.com/syahruluix"
@@ -49,7 +65,18 @@ export const ProjectsSection = ({ projects }) => {
             rel="noopener noreferrer"
             className="flex items-center justify-center w-full h-full"
           >
-            <span className="text-lg sm:text-xl [font-family:'Plus_Jakarta_Sans',Helvetica] font-normal text-white text-center tracking-[0] leading-[normal]">
+            <span
+              className="
+        text-sm 
+        sm:text-base 
+        md:text-lg 
+          font-normal 
+        text-white 
+        text-center 
+        leading-none 
+        tracking-tight
+      "
+            >
               Explore More
             </span>
           </a>

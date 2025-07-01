@@ -9,7 +9,7 @@ export const ProjectCard = ({ project, className }) => {
     <Card
       className={`group transition-colors duration-300 
         ${project.bgColor} 
-        hover:bg-[#667eea] 
+        hover:bg-[#3d46c9]/90
         hover:text-white 
         p-4 sm:p-6 md:p-8 
         flex flex-col lg:flex-row items-center lg:items-start justify-between 
@@ -24,29 +24,14 @@ export const ProjectCard = ({ project, className }) => {
       {/* Text Section */}
       <CardContent className="flex flex-col items-start gap-3 sm:gap-4 p-0 w-full lg:flex-[1]">
         <div className="flex flex-col items-start gap-3 sm:gap-4 w-full">
-          {project.confidential ? (
-            <div className="flex flex-col sm:flex-row items-start gap-2 sm:gap-4 w-full">
-              <Text
-                variant="caption"
-                className={`whitespace-nowrap transition-colors duration-300 group-hover:text-white ${project.categoryColor}`}
-              >
-                {project.category}
-              </Text>
-              <div className="flex items-center gap-1.5">
-                <div className="w-3 h-3 bg-[#eb5f5f] rounded-md" />
-                <Badge className="bg-transparent p-0 font-medium text-[#ec5f5f] text-sm sm:text-base">
-                  Confidential
-                </Badge>
-              </div>
-            </div>
-          ) : (
+          <div className="flex flex-col sm:flex-row items-start gap-2 sm:gap-4 w-full">
             <Text
               variant="caption"
-              className={`transition-colors duration-300 group-hover:text-white ${project.categoryColor}`}
+              className={`whitespace-nowrap transition-colors duration-300 group-hover:text-slate-200 ${project.categoryColor}`}
             >
               {project.category}
             </Text>
-          )}
+          </div>
 
           <Text
             variant="h4"

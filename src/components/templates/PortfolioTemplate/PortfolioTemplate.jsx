@@ -6,9 +6,16 @@ import { TestimonialsSection } from "../../organisms/TestimonialsSection/Testimo
 import { FooterSection } from "../../organisms/FooterSection/FooterSection";
 import { usePortfolio } from "../../../hooks/usePortfolio";
 import { Ticker } from "../../molecules/Ticker/Ticker";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export const PortfolioTemplate = () => {
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   const {
     personalInfo,
     navigationItems,
@@ -32,7 +39,7 @@ export const PortfolioTemplate = () => {
      
 
       <div className="w-full">
-        <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 md:px-16 lg:px-[120px] space-y-20 sm:space-y-24 md:space-y-28 lg:space-y-32">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 md:px-16 lg:px-[120px] space-y-12 sm:space-y-24 md:space-y-28 lg:space-y-32">
           <AboutSection personalInfo={personalInfo} />
           <SkillsSection skills={skills} />
           <ProjectsSection projects={projects} />

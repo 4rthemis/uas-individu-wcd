@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, CardContent } from "../../ui/card";
 import { Text } from "../../atoms/Text/Text";
 import { Image } from "../../atoms/Image/Image";
@@ -11,27 +10,35 @@ export const AboutSection = ({ personalInfo }) => {
     >
       <Card className="border-none shadow-none bg-transparent">
         <CardContent className="flex flex-col items-center gap-6 sm:gap-8 px-6 sm:px-8 md:px-12 lg:px-16 py-8 sm:py-12 md:py-16">
-          <Text variant="h2" color="primary" align="center">
-            About
-          </Text>
-
-          <Text
-            variant="body"
-            color="primary"
-            align="center"
-            className="max-w-[782px]"
-          >
-            <br />
-            I&apos;m a{" "}
-            <span className="font-semibold text-[#525ceb]">
-              UI/UX Designer
-            </span>{" "}
-            {personalInfo.aboutDescription}
-          </Text>
+          <div data-aos="fade-up" data-aos-duration="1000">
+            {" "}
+            <Text variant="h2" color="primary" align="center">
+              About
+            </Text>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000">
+            <Text
+              variant="body"
+              color="primary"
+              align="center"
+              className="max-w-[782px]"
+            >
+              <br />
+              I&apos;m a{" "}
+              <span className="font-semibold text-[#525ceb]">
+                UI/UX Designer
+              </span>{" "}
+              {personalInfo.aboutDescription}
+            </Text>
+          </div>
         </CardContent>
       </Card>
 
-      <div className="flex justify-center mt-4 mb-8 sm:mb-12 md:mb-16">
+      <div
+        data-aos="zoom-in-up"
+        data-aos-duration="1000"
+        className="flex justify-center mt-4 mb-8 sm:mb-12 md:mb-16"
+      >
         <Image
           src="/image/about.png"
           alt="Profile illustration"

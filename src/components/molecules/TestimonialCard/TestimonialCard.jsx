@@ -9,7 +9,7 @@ export const TestimonialCard = ({ testimonial, className }) => {
         group
         transition-colors duration-300
         ${testimonial.bgColor}
-        hover:bg-[#667eea]
+      hover:bg-[#3d46c9]/90
         hover:text-white
         rounded-2xl sm:rounded-3xl
         h-[426px]
@@ -67,7 +67,7 @@ export const TestimonialCard = ({ testimonial, className }) => {
               leading-snug
               transition-colors
               duration-300
-              group-hover:text-white
+              group-hover:text-slate-200
               ${testimonial.roleColor}
             `}
           >

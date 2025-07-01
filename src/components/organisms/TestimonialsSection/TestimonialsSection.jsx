@@ -9,7 +9,8 @@ export const TestimonialsSection = ({ testimonials }) => {
     >
       <div className="flex flex-col items-center gap-8 sm:gap-12 md:gap-16">
         {/* Heading */}
-        <div className="flex flex-col items-center gap-6 sm:gap-8 px-4 sm:px-8 md:px-16 lg:px-[120px]">
+        <div data-aos="fade-up"
+          data-aos-duration="1000" className="flex flex-col items-center gap-6 sm:gap-8 px-4 sm:px-8 md:px-16 lg:px-[120px]">
           <Text variant="h2" color="primary" align="center">
             Testimonials
           </Text>
@@ -24,7 +25,6 @@ export const TestimonialsSection = ({ testimonials }) => {
           </Text>
         </div>
 
-        {/* Marquee Animation with Pause on Hover */}
         <div className="w-full overflow-hidden">
           <div className="flex w-max animate-scroll hover:[animation-play-state:paused] gap-8 sm:gap-12 md:gap-16 px-4 sm:px-8">
             {[...testimonials, ...testimonials].map((testimonial, index) => (

@@ -59,7 +59,6 @@ export const projects = [
     url: "https://dribbble.com/shots/25648521-Tanisolusi-Smart-agriculture-App",
     bgColor: "bg-white",
     textColor: "text-[#242528]",
-    confidential: false,
   },
   {
     id: "kato",
@@ -71,7 +70,6 @@ export const projects = [
     url: "https://dribbble.com/shots/25097632-KATO-Easy-Calorie-and-Hydration-Tracking",
     bgColor: "bg-white",
     textColor: "text-[#242528]",
-    confidential: false,
   },
   {
     id: "tiketkita",
@@ -83,7 +81,6 @@ export const projects = [
     url: "https://dribbble.com/shots/25365267-TiketKita-Ticket-Train-Booking-App",
     bgColor: "bg-white",
     textColor: "text-[#242528]",
-    confidential: false,
   },
   {
     id: "gluca",
@@ -95,7 +92,29 @@ export const projects = [
     url: "https://dribbble.com/shots/25035502-Gluca-Health-App",
     bgColor: "bg-white",
     textColor: "text-[#242528]",
-    confidential: false,
+  },
+
+  {
+    id: "tenangin ",
+    title: "Tenangin – Mental Wellness App",
+    category: "Exploration",
+    categoryColor: "text-[#808690]",
+    image: "/image/project-5.png",
+    hasArrow: true,
+    url: "https://dribbble.com/shots/26177588-Tenangin-Mental-Wellness-for-Gen-Z",
+    bgColor: "bg-white",
+    textColor: "text-[#242528]",
+  },
+  {
+    id: "karyapro",
+    title: "KaryaPro - HR Mobile App",
+    category: "Exploration",
+    categoryColor: "text-[#808690]",
+    image: "/image/project-6.png",
+    hasArrow: true,
+    url: "https://dribbble.com/shots/25559229-KaryaPro-HR-Mobile-App",
+    bgColor: "bg-white",
+    textColor: "text-[#242528]",
   },
 ];
 
@@ -147,7 +166,7 @@ export const testimonials = [
   {
     id: "arifin",
     quote:
-      "Syahrul stood out in the Bootcamp for his strong design, presentation skills, and eagerness to learn. His work made a real impact.",
+      " Syahrul has a natural talent for understanding user needs and translating them into seamless, visually appealing designs.",
     image: "/image/arifin.png",
     name: "Arifin Habibi",
     role: "Full Stack Developer",
@@ -156,7 +175,6 @@ export const testimonials = [
     roleColor: "text-[#808690]",
   },
 ];
-
 
 export const socialLinks = [
   {
