@@ -1,4 +1,3 @@
-import React from "react";
 import { Icon } from "../../atoms/Icon/Icon";
 import { useNavigation } from "../../../hooks/useNavigation";
 import { useResponsive } from "../../../hooks/useResponsive";

@@ -11,7 +11,6 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 export const PortfolioTemplate = () => {
-
   useEffect(() => {
     AOS.init();
     AOS.refresh();
@@ -35,8 +34,7 @@ export const PortfolioTemplate = () => {
           navigationItems={navigationItems}
         />
       </div>
- <Ticker items={designerRoles} />
-     
+      <Ticker items={designerRoles} />
 
       <div className="w-full">
         <div className="max-w-screen-2xl mx-auto px-4 sm:px-8 md:px-16 lg:px-[120px] space-y-12 sm:space-y-24 md:space-y-28 lg:space-y-32">

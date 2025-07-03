@@ -51,7 +51,7 @@ export const ProjectsSection = ({ projects }) => {
           className="
     w-full 
     max-w-[400px] 
-    h-14 sm:h-15 md:h-16 
+  
     bg-[#3d46c9] 
     rounded-full 
     hover:bg-[#3d46c9]/90 
@@ -63,7 +63,7 @@ export const ProjectsSection = ({ projects }) => {
             href="https://dribbble.com/syahruluix"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-full h-full"
+            className="flex items-center justify-center w-full h-full py-3 sm:py-3 md:py-4 lg:py-5"
           >
             <span
               className="
